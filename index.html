@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <!-- Link to Material Design Icons for iconography -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div class="demo-controls">
+        <label for="login-toggle">Toggle Logged-In State:</label>
+        <input type="checkbox" id="login-toggle">
+    </div>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="header-logo" aria-label="Pension Portal Home">
+                <svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="200" height="50" fill="transparent"/>
+                    <circle cx="25" cy="25" r="18" fill="#183850"/>
+                    <circle cx="30" cy="25" r="10" fill="#54bbab"/>
+                    <circle cx="20" cy="25" r="4" fill="#EA8F3C"/>
+                    <text x="60" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#183850">PENSION</text>
+                    <text x="145" y="32" font-family="Arial, sans-serif" font-size="20" fill="#686a6c">PORTAL</text>
+                </svg>
+            </a>
+            <nav class="main-nav" id="main-navigation">
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li class="mega-menu-item">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Pensions Hub <span class="mdi mdi-chevron-down"></span></a>
+                        <div class="mega-menu">
+                            <div class="container mega-menu-inner">
+                                <div class="mega-menu-promo">
+                                    <h3><span class="mdi mdi-compass-outline"></span>Pensions Hub</h3>
+                                    <p>Find information and guides relevant to your pension journey.</p>
+                                </div>
+                                <div class="mega-menu-links-grid">
+                                    <ul>
+                                        <li><a href="#"><span class="mdi mdi-account-plus-outline"></span>I'm new to my pension scheme</a></li>
+                                        <li><a href="#"><span class="mdi mdi-file-document-edit-outline"></span>I want to make some pension changes</a></li>
+                                        <li><a href="#"><span class="mdi mdi-account-switch-outline"></span>I have a change in circumstances</a></li>
+                                        <li><a href="#"><span class="mdi mdi-trending-up"></span>I'm planning my retirement</a></li>
+                                        <li><a href="#"><span class="mdi mdi-human-greeting-variant"></span>I'm a retired member</a></li>
+                                        <li><a href="#"><span class="mdi mdi-emoticon-sad-outline"></span>I want to report a death</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mega-menu-item role-conditional" data-roles="active,deferred,pensioner" style="display: none;">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">My Documents <span class="mdi mdi-chevron-down"></span></a>
+                        <div class="mega-menu">
+                           <div class="container mega-menu-inner">
+                                <div class="mega-menu-promo">
+                                    <h3><span class="mdi mdi-file-document-multiple-outline"></span>My Documents</h3>
+                                    <p>Access your statements, letters, and important forms.</p>
+                                </div>
+                                <div class="mega-menu-links-grid">
+                                    <ul>
+                                        <li><a href="#"><span class="mdi mdi-file-chart-outline"></span>Annual Statements</a></li>
+                                        <li><a href="#"><span class="mdi mdi-email-outline"></span>Correspondence</a></li>
+                                        <li><a href="#"><span class="mdi mdi-account-heart-outline"></span>Nomination Forms</a></li>
+                                        <li><a href="#"><span class="mdi mdi-book-open-page-variant-outline"></span>Scheme Guides</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mega-menu-item role-conditional" data-roles="active,deferred,pensioner" style="display: none;">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Calculators <span class="mdi mdi-chevron-down"></span></a>
+                        <div class="mega-menu">
+                            <div class="container mega-menu-inner">
+                                <div class="mega-menu-promo">
+                                    <h3><span class="mdi mdi-calculator-variant-outline"></span>Calculators</h3>
+                                    <p>Estimate your pension benefits with our range of planning tools.</p>
+                                </div>
+                                <div class="mega-menu-links-grid">
+                                    <ul>
+                                        <li><a href="#"><span class="mdi mdi-cash-multiple"></span>Pension Payment Calculator</a></li>
+                                        <li><a href="#"><span class="mdi mdi-cash-100"></span>Lump Sum Calculator</a></li>
+                                        <li><a href="#"><span class="mdi mdi-run-fast"></span>Early Retirement Calculator</a></li>
+                                        <li><a href="#"><span class="mdi mdi-account-remove-outline"></span>Redundancy Calculator</a></li>
+                                        <li><a href="#"><span class="mdi mdi-hospital-box-outline"></span>Ill Health Calculator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mega-menu-item role-conditional" data-roles="active,deferred,pensioner" style="display: none;">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Personal Info <span class="mdi mdi-chevron-down"></span></a>
+                        <div class="mega-menu">
+                            <div class="container mega-menu-inner">
+                                <div class="mega-menu-promo">
+                                    <h3><span class="mdi mdi-account-details-outline"></span>Personal Info</h3>
+                                    <p>Keep your personal information and preferences up to date.</p>
+                                </div>
+                                <div class="mega-menu-links-grid">
+                                    <ul>
+                                        <li><a href="#"><span class="mdi mdi-email-check-outline"></span>Update contact preferences</a></li>
+                                        <li><a href="#"><span class="mdi mdi-bank-outline"></span>Update bank details</a></li>
+                                        <li><a href="#"><span class="mdi mdi-phone-outline"></span>Update telephone number</a></li>
+                                        <li><a href="#"><span class="mdi mdi-home-map-marker"></span>Update home address</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mega-menu-item">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Help & Support<span class="mdi mdi-chevron-down"></span></a>
+                        <div class="mega-menu">
+                            <div class="container mega-menu-inner">
+                                <div class="mega-menu-promo">
+                                    <h3><span class="mdi mdi-compass-outline"></span>Help & Support</h3>
+                                    <p>Find the answers and resources you need.</p>
+                                </div>
+                                <div class="mega-menu-links-grid">
+                                    <ul>
+                                        <li><a href="#"><span class="mdi mdi-phone-outline"></span>Contact Us</a></li>
+                                        <li><a href="#"><span class="mdi mdi-help-circle-outline"></span>Frequently asked questions</a></li>
+                                        <li><a href="#"><span class="mdi mdi-book-open-page-variant-outline"></span>Guides and resources</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="role-conditional" data-roles="" style="display: block;">
+                    <a href="/login" class="button button-primary">Log In</a>
+                </div>
+                <div class="header-actions-logged-in role-conditional" data-roles="active,deferred,pensioner" style="display: none;">
+                    <button class="notification-button" aria-label="View 3 unread notifications">
+                        <span class="mdi mdi-bell"></span>
+                        <span class="notification-count">3</span>
+                    </button>
+                    <div class="user-menu">
+                        <button class="user-menu-toggle" aria-haspopup="true" aria-expanded="false">
+                            Hi, John <span class="mdi mdi-chevron-down"></span>
+                        </button>
+                        <div class="user-menu-dropdown">
+                            <p class="last-login-info">Last logged in: 22/08/2025 at 10:42</p>
+                            <ul>
+                                <li><a href="/my-details">My Details</a></li>
+                                <li><a href="/logout">Log Off</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="main-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="mdi mdi-menu"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="#">Home</a></li>
+                <li class="separator">/</li>
+                <li class="current-page" aria-current="page">Help & Support</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Introduces the Help & Support page -->
+    <header class="hero-two-column">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Help & Support</h1>
+                <p>Find the answers and resources you need. Whether you have a quick question or need to speak to someone, we're here to help.</p>
+            </div>
+            <div class="hero-icon-container">
+                 <img src="./assets/images/443x576-helphub-member-1.png" alt="An illustration of various pension scheme members from different professions.">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Introduction Text -->
+        <section class="category-intro">
+            <div class="container">
+                <h2>How can we help you today?</h2>
+                <p>Select a category below to find frequently asked questions, read detailed guides, or get in touch with our support team.</p>
+            </div>
+        </section>
+
+        <!-- Grid of Support Links -->
+        <section class="category-grid-section">
+            <div class="container">
+                <div class="category-grid">
+
+                    <!-- FAQs Card -->
+                    <a href="#" class="category-card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="mdi mdi-help-circle-outline" aria-hidden="true"></span>
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <p class="card-subtext">Get quick answers to our most common questions about logging in, your account, and more.</p>
+                        </div>
+                        <div class="card-cta">
+                            <span>Go to FAQs</span>
+                            <span class="mdi mdi-arrow-right" aria-hidden="true"></span>
+                        </div>
+                    </a>
+
+                    <!-- Contact Us Card -->
+                    <a href="#" class="category-card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="mdi mdi-phone-outline" aria-hidden="true"></span>
+                                <h3>Contact Us</h3>
+                            </div>
+                            <p class="card-subtext">Need to speak with a member of our team? Find our contact details and opening hours here.</p>
+                        </div>
+                        <div class="card-cta">
+                            <span>View contact options</span>
+                            <span class="mdi mdi-arrow-right" aria-hidden="true"></span>
+                        </div>
+                    </a>
+
+                    <!-- Guides & Resources Card -->
+                    <a href="#" class="category-card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="mdi mdi-book-open-page-variant-outline" aria-hidden="true"></span>
+                                <h3>Guides & Resources</h3>
+                            </div>
+                            <p class="card-subtext">Access detailed guides, forms, and other resources to help you manage your pension.</p>
+                        </div>
+                        <div class="card-cta">
+                            <span>Browse resources</span>
+                            <span class="mdi mdi-arrow-right" aria-hidden="true"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+    
+</body>
+</html>
